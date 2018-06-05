@@ -13,9 +13,9 @@
         <ul class="site-navigation">
             <li><a href="catalog.html">Каталог</a>
                 <ul class="catalog-dropdown">
-                    <li><a href="#">Новинки</a></li>
-                    <li><a href="#">Сливочное</a></li>
-                    <li class="catalog-dropdown-current"><a href="#">Щербеты</a></li>
+                    <li class="catalog-dropdown-new"><a href="#">Новинки</a></li>
+                    <li class="catalog-dropdown-current"><a href="catalog.html">Сливочное</a></li>
+                    <li><a href="#">Щербеты</a></li>
                     <li><a href="#">Фруктовый лёд</a></li>
                     <li><a href="#">Мелорин</a></li>
                 </ul>
@@ -23,22 +23,44 @@
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
         </ul>
-        <div class="search">
-            Поиск
-        </div>
         <ul class="user-navigation">
-            <li class="login-link">Вход</li>
+            <li class="user-navigation-search">
+                <a href="#">Поиск</a>
+                <div class="modal modal-search">
+                    <!-- Тут будет форма -->
+                </div>
+            </li>
+            <li class="user-navigation-login">
+                <a href="#">Вход</a>
+                <div class="modal modal-login">
+                    <!-- Тут будет форма -->
+                    <p>
+                        <a href="">Забыли пароль?</a>
+                        <a href="">Новая регистрация</a>
+                    </p>
+                </div>
+            </li>
+            <li class="user-navigation-basket">
+                <a href="#">Пусто</a>
+            </li>
         </ul>
-        <div class="basket">
-            Корзина
-        </div>
-        <p>с 10 до 20, ежедневно <span class="header-phone">8 812 450-25-25</span></p>
     </nav>
+    <p>с 10 до 20, ежедневно <span class="header-phone">8 812 450-25-25</span></p>
 </header>
 <main>
     <section class="slider">
-        <h1>Крем-боюле и пломбир с малиновым джемом</h1>
-        <a href="#" class="button">Давайте оба!</a>
+        <div class="slide">
+            <b>Крем-боюле и пломбир с малиновым джемом</b>
+            <a href="#" class="button">Давайте оба!</a>
+        </div>
+        <div class="slide">
+            <b>Шоколадный пломбир и лимонный сорбет</b>
+            <a href="#" class="button">Давайте оба!</a>
+        </div>
+        <div class="slide">
+            <b>Пломбир с помадкой и клубничный щербет</b>
+            <a href="#" class="button">Давайте оба!</a>
+        </div>
         <ul class="slider-navigation">
             <li class="slider-navigation-current"></li>
             <li></li>
@@ -66,78 +88,56 @@
         <h2 class="visually-hidden">Популярные сорта мороженого</h2>
         <ul class="catalog-list">
             <li class="catalog-item hit">
-                <h3>
-                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                </h3>
-                <p class="catalog-item-image">
-                    <a href="#">
-                        <img src="http://placehold.it/267x267" width="267" height="267"
-                             alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-                    </a>
-                </p>
+                <img src="http://placehold.it/267x267" width="267" height="267"
+                     alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
                 <p>310 ₽ <span>/кг</span></p>
+                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <a href="#" class="button">Быстрый просмотр</a>
             </li>
             <li class="catalog-item hit">
-                <h3>
-                    <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-                </h3>
-                <p class="catalog-item-image">
-                    <a href="#">
-                        <img src="http://placehold.it/267x267" width="267" height="267"
-                             alt="Сливочно-кофейное мороженое с кусочками шоколада">
-                    </a>
-                </p>
+                <img src="http://placehold.it/267x267" width="267" height="267"
+                     alt="Сливочно-кофейное мороженое с кусочками шоколада">
                 <p>380 ₽ <span>/кг</span></p>
+                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                <a href="#" class="button">Быстрый просмотр</a>
             </li>
             <li class="catalog-item hit">
-                <h3>
-                    <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                </h3>
-                <p class="catalog-item-image">
-                    <a href="#">
-                        <img src="http://placehold.it/267x267" width="267" height="267"
-                             alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-                    </a>
-                </p>
+                <img src="http://placehold.it/267x267" width="267" height="267"
+                     alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
                 <p>355 ₽ <span>/кг</span></p>
+                <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                <a href="#" class="button">Быстрый просмотр</a>
             </li>
             <li class="catalog-item hit">
-                <h3>
-                    <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                </h3>
-                <p class="catalog-item-image">
-                    <a href="#">
-                        <img src="http://placehold.it/267x267" width="267" height="267"
-                             alt="Сливочное мороженое крем-брюле с карамельной подливкой">
-                    </a>
-                </p>
+                <img src="http://placehold.it/267x267" width="267" height="267"
+                     alt="Сливочное мороженое крем-брюле с карамельной подливкой">
                 <p>415 ₽ <span>/кг</span></p>
+                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                <a href="#" class="button">Быстрый просмотр</a>
             </li>
         </ul>
     </section>
-    <section class="features">
+    <section class="description-shop">
         <h2>Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства в развес</h2>
-        <ul class="features-list">
-            <li class="features-item">Все наше мороженое изготавливается на собственном производстве, с использованием
-                современного оборудования и проверенных временем технологий.
+        <ul class="description-shop-list">
+            <li class="description-shop-item">Все наше мороженое изготавливается на собственном производстве, с
+                использованием современного оборудования и проверенных временем технологий.
             </li>
-            <li class="features-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
-                качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого
-                сырья.
+            <li class="description-shop-item">Для приготовления мороженого используются настоящие сливки и молоко
+                высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически
+                чистого сырья.
             </li>
-            <li class="features-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
-                компаний, с которыми нас связывает долговременное сотрудничество.
+            <li class="description-shop-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств
+                и компаний, с которыми нас связывает долговременное сотрудничество.
             </li>
-            <li class="features-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-                который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            <li class="description-shop-item">Доставка нашего мороженого до заказчиков осуществляется в специальном
+                термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
             </li>
         </ul>
     </section>
-    <article>
-        <h1>
-            <a href="#">10 способов сервировки фруктовых шербетов к столу</a>
-        </h1>
-        <h2>Новое в нашем блоге</h2>
+    <article class="news-block">
+        <p>Новое в нашем блоге</p>
+        <a href="#" class="">10 способов сервировки фруктовых шербетов к столу</a>
     </article>
     <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -146,10 +146,16 @@
         <!-- тут будет форма-->
     </section>
     <section class="map">
+        <!--  -->
         <p>Адрес главного офиса и офлайн магазина: <span class="big">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
         </p>
         <p>Для заказов по телефону: <span class="big">8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
         <button type="button">Форма обратной связи</button>
+        <div class="modal modal-feedback">
+            <h2>Мы обязательно вам ответим!</h2>
+            <!-- Тут будет форма -->
+            <span class="modal-close">x</span>
+        </div>
     </section>
 </main>
 <footer class="main-footer">
@@ -170,22 +176,5 @@
             Сделано в HTML Academy &copy; 2017</a>
     </p>
 </footer>
-
-<!-- Модальные окна -->
-<section class="modal modal-search">
-    <!-- Тут будет форма -->
-</section>
-<section class="modal modal-login">
-    <!-- Тут будет форма -->
-    <p>
-        <a href="">Забыли пароль?</a>
-        <a href="">Новая регистрация</a>
-    </p>
-</section>
-<section class="modal modal-feedback">
-    <h2>Мы обязательно вам ответим!</h2>
-    <!-- Тут будет форма -->
-    <span class="modal-close">x</span>
-</section>
 </body>
 </html>

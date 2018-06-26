@@ -567,25 +567,40 @@ img {
     flex-wrap: wrap;
 }
 
+.catalog-item {
+    position: relative;
+    width: 267px;
+    margin-bottom: 35px;
+}
+
 .catalog-list .hit::before {
     content: "";
     position: absolute;
     width: 62px;
     height: 62px;
+    top: 10px;
     background-image: url("../img/hit.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    z-index: 30;
 }
 
 .catalog-wrapper {
     text-align: center;
     margin-top: 10px;
+    z-index: 25;
 }
 
-.catalog-item {
-    position: relative;
+.catalog-item:hover .catalog-wrapper {
+    position: absolute;
     width: 267px;
-    margin-bottom: 35px;
+    top: -6px;
+    left: -13px;
+    padding: 6px 13px 20px 13px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 20;
 }
 
 .item-price {
@@ -598,6 +613,10 @@ img {
 
 .item-kg {
     font-size: 30px;
+}
+
+.catalog-item:hover .item-price {
+    top: 156px;
 }
 
 .item-title {
@@ -916,6 +935,7 @@ a.btn-promo-chocolate {
 }
 
 a.btn-catalog {
+    display: none;
     width: 200px;
     height: 43px;
     font-size: 18px;
@@ -923,14 +943,14 @@ a.btn-catalog {
     font-weight: 700;
     padding: 9px 15px;
     color: #ffffff;
+    margin-top: 10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-a.btn-catalog:hover,
-a.btn-catalog:focus {
-    color: #ffffff;
+.catalog-item:hover a.btn-catalog {
+    display: inline-block;
 }
 
 .filters legend {
@@ -1102,10 +1122,14 @@ a.btn-catalog:focus {
 }
 
 .footer-navigation a:hover,
-.footer-navigation a:active,
 .footer-navigation a:focus {
     color: #ffbc9e;
     border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.footer-navigation a:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158, 1);
 }
 
 .footer-copyright {
@@ -1131,8 +1155,12 @@ a.btn-catalog:focus {
 }
 
 .footer-copyright .academy:hover,
-.footer-copyright .academy:active,
 .footer-copyright .academy:focus {
     color: #ffbc9e;
     border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.footer-copyright .academy:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158, 1);
 }

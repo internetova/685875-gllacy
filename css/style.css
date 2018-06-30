@@ -1013,7 +1013,7 @@ img {
     margin: 0 auto;
     padding: 0 27px;
 }
-
+/*
 .map-container::after {
     content: "";
     position: absolute;
@@ -1023,7 +1023,7 @@ img {
     top: 74px;
     left: 560px;
 }
-
+*/
 .contacts {
     position: absolute;
     top: 60px;

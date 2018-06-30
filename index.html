@@ -5,7 +5,7 @@
     <title>Главная страница: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
 </head>
 <body>
 <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -49,7 +49,7 @@
                     <li class="user-navigation-login">
                         <a class="login-link" href="#">Вход</a>
                         <div class="modal modal-login">
-                            <form action="#" method="post">
+                            <form action="https://echo.htmlacademy.ru" method="post">
                                 <input type="email" name="user-email" placeholder="Электронная почта" id="user-email"
                                        required>
                                 <label for="user-email" class="visually-hidden">Электронная почта</label>
@@ -216,19 +216,19 @@
         <div class="modal modal-feedback">
             <h2>Мы обязательно вам ответим!</h2>
             <button class="modal-close" type="button">Закрыть</button>
-            <form action="#" method="post">
+            <form action="https://echo.htmlacademy.ru" method="post">
                 <fieldset>
                     <legend class="visually-hidden">Ваши контактные данные</legend>
-                    <input type="text" name="feedback-user-name" placeholder="Как вас зовут?" id="feedback-user-name">
+                    <input type="text" name="feedback-user-name" placeholder="Как вас зовут?" id="feedback-user-name" required>
                     <label for="feedback-user-name" class="visually-hidden">Как вас зовут?</label>
                     <input type="email" name="feedback-user-email" placeholder="Ваша почта для ответа?"
-                           id="feedback-user-email">
+                           id="feedback-user-email" required>
                     <label for="feedback-user-email" class="visually-hidden">Ваша почта для ответа?</label>
                 </fieldset>
                 <fieldset>
                     <legend class="visually-hidden">Ваше сообщение</legend>
                     <textarea name="feedback-user-message" id="feedback-user-message" cols="30" rows="5"
-                              placeholder="Напишите что-нибудь..."></textarea>
+                              placeholder="Напишите что-нибудь..." required></textarea>
                     <label for="feedback-user-message" class="visually-hidden">Напишите что-нибудь...</label>
                 </fieldset>
                 <button type="submit" class="button">Отправить</button>
@@ -288,5 +288,6 @@
         </footer>
     </div>
 </div>
+<script src="js/script-min.js"></script>
 </body>
 </html>

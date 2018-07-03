@@ -1064,10 +1064,20 @@ img {
     margin-bottom: 35px;
 }
 
+.subscription-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 .subscription input[type=email] {
     display: inline-block;
     width: 367px;
-    margin-right: 5px;
+    font-size: 16px;
+    margin-bottom: 0;
 }
 
 .map {
@@ -1315,6 +1325,7 @@ a.btn-catalog {
 .btn-contacts {
     padding-left: 27px;
     padding-right: 27px;
+    white-space: nowrap;
 }
 
 .search-form fieldset {

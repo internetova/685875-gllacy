@@ -733,6 +733,7 @@ img {
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
+    display: block;
 }
 
 #product-1:checked ~ .site-wrapper {

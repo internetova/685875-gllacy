@@ -14,61 +14,66 @@
 <div class="site-wrapper">
     <div class="container">
         <header class="main-header">
-            <nav class="main-navigation">
-                <a class="main-header-logo">
-                    <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси">
-                </a>
-                <ul class="site-navigation">
-                    <li class="navigation-item">
-                        <a href="catalog.html">Каталог</a>
-                        <ul class="catalog-dropdown">
-                            <li><a class="catalog-item-new" href="#">Новинки</a></li>
-                            <li class="catalog-item-current"><a href="catalog.html">Сливочное</a></li>
-                            <li><a href="#">Щербеты</a></li>
-                            <li><a href="#">Фруктовый лёд</a></li>
-                            <li><a href="#">Мелорин</a></li>
-                        </ul>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#">Доставка и оплата</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#">О компании</a>
-                    </li>
-                </ul>
-                <ul class="user-navigation">
-                    <li class="user-navigation-search">
-                        <a class="search-link" href="#"></a>
-                        <div class="modal modal-search">
-                            <form action="#" method="post">
-                                <input type="search" name="search" placeholder="Что ищем?" required id="search">
-                                <label for="search" class="visually-hidden">Что ищем?</label>
-                            </form>
-                        </div>
-                    </li>
-                    <li class="user-navigation-login">
-                        <a class="login-link" href="#">Вход</a>
-                        <div class="modal modal-login">
-                            <form action="https://echo.htmlacademy.ru" method="post">
-                                <input type="email" name="user-email" placeholder="Электронная почта" id="user-email"
-                                       required>
-                                <label for="user-email" class="visually-hidden">Электронная почта</label>
-                                <input type="password" name="user-password" placeholder="Пароль" id="user-password"
-                                       required>
-                                <label for="user-password" class="visually-hidden">Пароль</label>
-                                <button class="button" type="submit">Войти</button>
-                            </form>
-                            <div class="user-nav-link">
-                                <a href="#">Забыли пароль?</a>
-                                <a href="#">Новая регистрация</a>
+            <div class="navigation-wrapper">
+                <nav class="main-navigation">
+                    <a class="main-header-logo">
+                        <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси">
+                    </a>
+                    <ul class="site-navigation">
+                        <li class="navigation-item">
+                            <a href="catalog.html">Каталог</a>
+                            <ul class="catalog-dropdown">
+                                <li><a class="catalog-item-new" href="#">Новинки</a></li>
+                                <li class="catalog-item-current"><a href="catalog.html">Сливочное</a></li>
+                                <li><a href="#">Щербеты</a></li>
+                                <li><a href="#">Фруктовый лёд</a></li>
+                                <li><a href="#">Мелорин</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#">О компании</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="services-navigation">
+                    <ul class="user-navigation">
+                        <li class="user-navigation-search">
+                            <a class="search-link" href="#"></a>
+                            <div class="modal modal-search">
+                                <form action="#" method="post">
+                                    <input type="search" name="search" placeholder="Что ищем?" required id="search">
+                                    <label for="search" class="visually-hidden">Что ищем?</label>
+                                </form>
                             </div>
-                        </div>
-                    </li>
-                    <li class="user-navigation-basket">
-                        <a class="basket-link" href="#">Пусто</a>
-                    </li>
-                </ul>
-            </nav>
+                        </li>
+                        <li class="user-navigation-login">
+                            <a class="login-link" href="#">Вход</a>
+                            <div class="modal modal-login">
+                                <form action="https://echo.htmlacademy.ru" method="post">
+                                    <input type="email" name="user-email" placeholder="Электронная почта"
+                                           id="user-email"
+                                           required>
+                                    <label for="user-email" class="visually-hidden">Электронная почта</label>
+                                    <input type="password" name="user-password" placeholder="Пароль" id="user-password"
+                                           required>
+                                    <label for="user-password" class="visually-hidden">Пароль</label>
+                                    <button class="button" type="submit">Войти</button>
+                                </form>
+                                <div class="user-nav-link">
+                                    <a href="#">Забыли пароль?</a>
+                                    <a href="#">Новая регистрация</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="user-navigation-basket">
+                            <a class="basket-link" href="#">Пусто</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="header-info-wrapper">
                 <span class="header-hours">с 10 до 20, ежедневно</span>
                 <span class="header-phone">8 812 450-25-25</span>
@@ -182,7 +187,7 @@
             <div class="content-wrapper">
                 <article class="news-block">
                     <p>Новое в нашем блоге</p>
-                    <a href="#">10 способов сервировки<br>фруктовых шербетов к<br>столу</a>
+                    <a href="#">10 способов сервировки фруктовых шербетов к столу</a>
                 </article>
                 <section class="subscription-wrapper">
                     <div class="subscription">
@@ -210,7 +215,7 @@
                 </p>
                 <p>Для заказов по телефону:</p>
                 <p class="contacts-phone"><span class="big">8 812 450-25-25</span><br>(с 10 до 20 ежедневно)</p>
-                <button class="button btn-contacts" type="button">Форма обратной связи</button>
+                <a class="button btn-contacts" href="#">Форма обратной связи</a>
             </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5147284673294!2d30.326559491015626!3d59.94019416370472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530303915762"
@@ -283,8 +288,9 @@
                 <li><a href="#">Экологические стандарты</a></li>
             </ul>
             <div class="footer-copyright">
-                <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39"
-                                                      alt="Логотип HTML Academy"></a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108"
+                                                                        height="39"
+                                                                        alt="Логотип HTML Academy"></a>
                 <p>Сделано в <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;
                     2017</p>
             </div>
